@@ -1,0 +1,6 @@
+type ExampleEntity @entity {
+  id: ID!
+  count: BigInt!
+  _queryId: Bytes! # bytes32
+  _time: BigInt! # uint256
+}
