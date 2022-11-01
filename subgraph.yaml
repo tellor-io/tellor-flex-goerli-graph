@@ -1,4 +1,4 @@
-specVersion: 0.0.1
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
 dataSources:
@@ -10,7 +10,7 @@ dataSources:
       abi: Contract
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - NewReport
@@ -38,4 +38,4 @@ dataSources:
           handler: handleStakeWithdrawn
         - event: ValueRemoved(bytes32,uint256)
           handler: handleValueRemoved
-      file: ./src/contract.ts
+      file: ./src/mapping.ts
