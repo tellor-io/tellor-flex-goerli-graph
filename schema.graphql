@@ -1,6 +1,10 @@
-type ExampleEntity @entity {
+type NewReportEntity @entity {
   id: ID!
-  count: BigInt!
-  _queryId: Bytes! # bytes32
-  _time: BigInt! # uint256
+  _queryId: Bytes! # Bytes32
+  _time: BigInt! # uint256/UnixTimestamp
+  _value: Bytes! # Bytes
+  _nonce: BigInt! # uint256
+  _queryData: Bytes! # Bytes
+  _reporter: Bytes! # Address
+  txnHash: Bytes!
 }
